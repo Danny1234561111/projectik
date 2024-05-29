@@ -26,3 +26,7 @@ echo "Enter comment in file:"
 read comment
 echo "# $comment #">>$backup_file
 ```
+Запуск файла
+```bash
+bash heh.bash
+```
