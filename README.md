@@ -15,3 +15,14 @@ echo "Enter comment in file:"
 read comment
 echo "# $comment #">>$backup_file
 ```
+При желании сохранять делать резервную копию файла предоставлена только возможность его поменять вручную - myfile.txt, но, если вы хотите вписывать файл, то можно просто добавить эти строчки
+```bash
+echo "Enter namefile:"
+read namefile
+file_to_backup="$namefile"
+cp "$file_to_backup" "$backup_file"
+echo "Backup created: $backup_file"
+echo "Enter comment in file:"
+read comment
+echo "# $comment #">>$backup_file
+```
